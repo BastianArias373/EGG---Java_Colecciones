@@ -67,7 +67,7 @@ public class peliculaServicio {
         }
     }
     
-    public void menuAcciones(){
+    public void menu(){
         System.out.println("Elija una accion: \n" +
                             "1) Mostrar Peliculas \n" +
                             "2) Pelis Largas \n" + 
@@ -75,6 +75,34 @@ public class peliculaServicio {
                             "4) Ordenar por duracion (Descendente) \n" +
                             "5) Ordenar por Titulo (Alfabeticamente) \n" + 
                             "6) Ordenar por Autor (Alfabeticamente) \n");
+        
+        int opcion = leer.nextInt();
+        menuElecciones(opcion);
+    }
+    
+    public void menuElecciones(int eleccion){
+        switch (eleccion) {
+            case 1:
+                pelisVer();
+                break;
+            case 2:
+                pelisLargas();
+                break;
+            case 3:
+                pelisOrdenDuracionAsc();
+                break;
+            case 4:
+                pelisOrdenDuracionDsc();
+                break;
+            case 5:
+                pelisOrdenTituloAsc();
+                break;
+            case 6:
+                pelisOrdenTituloAsc();
+                break;
+            default:
+                throw new AssertionError();
+        }
     }
     
     

@@ -49,9 +49,7 @@ public class EJ04_Cine {
             n = leer.next().toLowerCase().charAt(0);
             
         }
-        ps.menuAcciones();
-        ps.pelisOrdenAutorAsc();
-        ps.pelisOrdenTituloAsc();
+        ps.menu();
     }
     
 }
