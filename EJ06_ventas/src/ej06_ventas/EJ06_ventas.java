@@ -18,15 +18,16 @@ public class EJ06_ventas {
         
         Scanner leer = new Scanner(System.in);
         productoServicio ps = new productoServicio();
+        
         char x = 's';
-        while (x != 'n') {            
+        while (x != 'n') { 
             ps.crearProducto();
+            ps.menu();
             System.out.println("Desea agregar otro producto? y/n");
             x = leer.next().toLowerCase().charAt(0);
         }
-        ps.mostrarProductos();
-        ps.crearProducto();
-        ps.mostrarProductos();
+        
+        
     }
     
 }
